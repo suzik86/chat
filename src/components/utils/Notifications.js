@@ -6,19 +6,15 @@ class Notifications extends React.Component {
     return () => {
       switch (type) {
         case 'info':
-          NotificationManager.info('Message text');
+          NotificationManager.info('New message');
           break;
-        // case 'success':
-        //   NotificationManager.success('Success message', 'Title here');
-        //   break;
-        // case 'warning':
-        //   NotificationManager.warning('Warning message', 'Close after 3000ms', 3000);
-        //   break;
         // case 'error':
         //   NotificationManager.error('Error message', 'Click me!', 5000, () => {
         //     alert('callback');
         //   });
         //   break;
+        default:
+        break;
       }
     };
   };
@@ -29,15 +25,7 @@ class Notifications extends React.Component {
         <button className='btn btn-info'
           onClick={this.createNotification('info')}>New message
         </button>
-        {/* <hr/>
-        <button className='btn btn-success'
-          onClick={this.createNotification('success')}>Success
-        </button>
-        <hr/>
-        <button className='btn btn-warning'
-          onClick={this.createNotification('warning')}>Warning
-        </button>
-        <hr/>
+        {/* 
         <button className='btn btn-danger'
           onClick={this.createNotification('error')}>Error
         </button> */}

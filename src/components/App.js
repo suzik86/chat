@@ -10,13 +10,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        
         <Chat />
-        <Notifications />
+        {/* <Notifications /> */}
       </div>
     )
   }
 }
-
-
-
 export default App;
